@@ -5,6 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- ***header***** -->
+    <header>
+      <div class="head-container">
+        <span>resto</span>
+        <nav>
+          <ul>
+            <li>home</li>
+            <li>reservations</li>
+            <li>menu</li>
+            <li>blog</li>
+            <li>pages</li>
+            <li>shop</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+        <div class="media-container">
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <h1>
+        "welcome to" <br />
+        "the resto"
+      </h1>
+      <img src="./assets/img/ic-plate-big.png" alt="plate" />
+      <p>we reserve only the freshest ingredients!</p>
+    </header>
+    <!--*******page principale**** -->
+    <main>
+      <!-- ***section présentation****** -->
+      <section class="presentaion">
+        <div class="presentation">
+          <div class="pres-container">
+            <h3>"discover"<br />our store</h3>
+            <img src="./assets/img/ic-plate.png" alt="plate" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              ratione ex! Incidunt eveniet at magni error vel atque odit quod
+              quam, earum necessitatibus ducimus sequi. Aperiam quaerat
+              veritatis iure error, quia nisi nostrum vitae reiciendis!
+            </p>
+            <div class="chef-contaier">
+              <img src="./assets/img/avatar-01.jpg" alt="chef" />
+              <h4>"russell stephens" <br /><span>chef cook</span></h4>
+              <h6>Chef Cook</h6>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/store-01.jpg" alt="presentation store" />
+          </div>
+        </div>
+      </section>
+      <!-- ****section menu***** -->
+      <section class="menu-container">
+        <h3>discover</h3>
+        <img src="./assets/img/ic-plate.png" alt="plate" />
+        <ul>
+          <li>breakfast</li>
+          <li>lunch</li>
+          <li>dinner</li>
+          <li>drinks</li>
+          <li>other</li>
+        </ul>
+        <div class="menu_box-container">
+          <div class="mushroomt-container">
+            <img src="./assets/img/dish-item-01.jpg" alt="mushroom" />
+            <h5>italian source mushroom</h5>
+            <p>mushroom/garlic/veggies <span>$12</span></p>
+          </div>
+          <div class="fried-container">
+            <img src="./assets/img/dish-item-02.jpg" alt="fried" />
+            <h5>fried potatoes with garlic</h5>
+            <p>potatoes/olive oil/garlic <span>$22</span></p>
+          </div>
+          <div class="tenu-container">
+            <img src="./assets/img/dish-item-03.jpg" alt="tenu" />
+            <h5>tenu roast source</h5>
+            <p>tuna/potatoes/rice<span>$15</span></p>
+          </div>
+          <div class="roast-container">
+            <img src="./assets/img/dish-item-04.jpg" alt="roast pork" />
+            <h5>roast pork (4 sticks)</h5>
+            <p>pork/veggies/shoyu <span>$18</span></p>
+          </div>
+          <div class="salted-container">
+            <img src="./assets/img/dish-item-05.jpg" alt="salted" />
+            <h5>salted fried chicken</h5>
+            <p>chicken/olive oil/salt<span>$20</span></p>
+          </div>
+          <div class="crab-container">
+            <img src="./assets/img/dish-item-06.jpg" alt="crab" />
+            <h5>crab with curry sources</h5>
+            <p>crab/potatoes/rice<span>$14</span></p>
+          </div>
+          <div class="imported-container">
+            <img src="./assets/img/dish-item-07.jpg" alt="imported" />
+            <h5>imported slamon steak</h5>
+            <p>salmon/veggies/oil<span>$16</span></p>
+          </div>
+          <div class="baked-container">
+            <img src="./assets/img/dish-item-08.jpg" alt="baked" />
+            <h5>baked potato pizza</h5>
+            <p>potato/bread/cheese<span>$25</span></p>
+          </div>
+        </div>
+      </section>
+      <!-- **section reservation*** -->
+      <section class="reservation">
+        <div class="open-container">
+          <h4>time <br />open</h4>
+          <img src="./assets/img/ic-plate.png" alt="plate" />
+          <h6>monday-friday</h6>
+          <p>
+            <span>monday-friday</span><br />
+            7AM-11AM (Breafast) <br />11AM-10PM (Lunch/Dinner)
+          </p>
+
+          <h6>saturday/sunday</h6>
+          <p>
+            "8AM-1PM(Brunch) <br />
+            1PM-9PM (Lunch/Dinner)
+          </p>
+          <h6>+15 890 979 25 52</h6>
+        </div>
+        <div class="reserv-container">
+          <h4>Reservation <br />online booking</h4>
+          <img src="./assets/img/ic-plate.png" alt="plate" />
+          <div class="form_reservation-container">
+            <select id="people_number" name="people_number">
+              <option value="1">people</option>
+              <option value="2">people</option>
+              <option value="3">people</option>
+              <option value="4">people</option>
+              <option value="5">people</option>
+            </select>
+            <input type="date" name="date" id="" />
+            <input type="time" name="time" id="" />
+            <input type="text" value="Name" id="name" />
+            <input type="tel" value="Phone" id="Phone" />
+            <input type="email" value="Email" id="Email" />
+            <div class="submit">
+              <input type="submit" value="book now" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ****section event***** -->
+      <section class="event">
+        <h4>Upcoming <br />our event</h4>
+        <img src="./assets/img/ic-plate.png" alt="plate" />
+        <div class="event-container">
+          <div class="event_left-container">
+            <div class="night-container">
+              <div class="date"><span>08 July</span></div>
+              <h5>night inspirescu party</h5>
+              <p>Restaurant Resto 10:00pm-6:00am</p>
+              <span>buy tickets</span>
+            </div>
+            <div class="DJ-container">
+              <div class="date"><span>08 July</span></div>
+              <h5>night inspirescu party</h5>
+              <p>Restaurant Resto 10:00pm-6:00am</p>
+              <span>buy tickets</span>
+            </div>
+          </div>
+          <div class="event_right-container">
+            <div class="Johnnie_night-container">
+              <div class="date"><span>08 July</span></div>
+              <h5>night inspirescu party</h5>
+              <p>Restaurant Resto 10:00pm-6:00am</p>
+              <span>buy tickets</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***section CEO** -->
+      <section class="ceo-container">
+        <img src="./assets/img/avatar-02.jpg" alt="CEO" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vitae
+          ex cum. Voluptates tenetur nostrum ipsum explicabo, esse blanditiis
+          sit, fugiat laudantium soluta odit, quidem obcaecati cumque cum
+          reiciendis suscipit quos dolor deleniti perferendis distinctio? Ipsum
+          animi esse labore fugit dolorem adipisci saepe qui quis veniam impedit
+          error iusto vitae amet et, magni ullam beatae non enim accusantium
+          quibusdam laborum?
+        </p>
+        <h4>russell stephens</h4>
+        <h6>CEO-HeadPassion</h6>
+      </section>
+    </main>
+    <!-- ****pied de page**** -->
+    <footer>
+      <div class="resto-container">
+        <h4>Resto</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          fugit quia consequuntur porro molestias ad? Non, voluptatum veritatis
+          quisquam voluptas earum inventore dolore suscipit ipsum nesciunt!
+          Aliquid aut vitae obcaecati?
+        </p>
+      </div>
+      <div class="form-container">
+        <h5>Newsletter</h5>
+        <input type="email" value="Your email address" id="" />
+
+        <div class="media-conatiner">
+          <ul class="scl-container">
+            follow us:
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-regular fa-hashtag"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
