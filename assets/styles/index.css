@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "allura regula", verdana;
+  src: url(../../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins", sans-serif;
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+  src: url(../../fonts/Roboto-Light.ttf);
+}
 body {
-  background: blueviolet;
+  font-family: poppins, sans serif;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: rgba(31, 30, 30, 0.89);
+}
+@keyframes animBefor {}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: none;
 }/*# sourceMappingURL=index.css.map */
