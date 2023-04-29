@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: url(../img/bg-slider-06.jpg) center/cover fixed;
+  background: url(../img/bg-slider-06.jpg) center/cover;
   padding: 0 50px;
   color: white;
 
@@ -58,6 +58,34 @@ header {
     }
   }
   .header-container {
-    @include childCenter;
+    // @include childCenter;
+
+    div {
+      margin-top: -150px;
+
+      h2 {
+        font-family: allura;
+        font-size: 3rem;
+        font-weight: 100;
+        // color: $color1;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        letter-spacing: 10px;
+        font-weight: 700;
+        margin-top: -28px;
+        font-family: poppins;
+      }
+      img {
+        height: 27px;
+        margin: 32px 0;
+      }
+      h6 {
+        font-size: 0.75rem;
+        letter-spacing: 6px;
+        font-weight: 100;
+      }
+    }
   }
 }
