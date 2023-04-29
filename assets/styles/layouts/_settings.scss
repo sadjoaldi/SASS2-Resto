@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "allura regula", verdana;
+  src: url(../../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins", sans-serif;
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+
+$font1: allura regula, verdana;
+$font2: poppins, sans-serif;
+$font3: roboto, verdana, tahoma, sans-serif;
+$black1: rgba(31, 30, 30, 0.89);
+$white1: #eee;
+$grey: rgb(182, 182, 182);
+$color1: rgb(166, 114, 69);
+
+@mixin childCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin alignChilden($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+// @mixin nav {
+//   font-family: $font1;
+//   text-transform: uppercase;
+// }
+
+// @mixin headname {
+//   font-family: $font3;
+//   text-transform: uppercase;
+//   font-weight: bold;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font3;
+  text-align: center;
+  background-color: $black1;
+}
