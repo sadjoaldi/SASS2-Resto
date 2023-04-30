@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "allura regula", verdana;
-  src: url(../../fonts/Allura-Regular.ttf);
+  font-family: "Allura";
+  src: url(../fonts/Allura-Regular.ttf);
 }
 @font-face {
-  font-family: "poppins", sans-serif;
-  src: url(../../fonts/Poppins-Medium.ttf);
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
-  font-family: "roboto", Verdana, Geneva, Tahoma, sans-serif;
-  src: url(../../fonts/Roboto-Light.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
 }
 * {
   margin: 0;
@@ -21,9 +21,9 @@ li {
 }
 
 body {
-  font-family: roboto, verdana, tahoma, sans-serif;
+  font-family: Roboto, serif;
   text-align: center;
-  background-color: rgba(31, 30, 30, 0.89);
+  background: rgba(31, 30, 30, 0.89);
 }
 
 header {
@@ -40,7 +40,6 @@ header .head-container {
 }
 header h1 {
   text-transform: uppercase;
-  font-family: Roboto-Light;
 }
 header nav {
   height: 12vh;
@@ -51,7 +50,6 @@ header nav {
   margin: 0 auto;
 }
 header nav .logo {
-  font-family: allura regula;
   font-weight: 100;
   font-size: 2rem;
   text-align: left;
@@ -83,7 +81,6 @@ header .header-container div {
   margin-top: -150px;
 }
 header .header-container div h2 {
-  font-family: allura;
   font-size: 3rem;
   font-weight: 100;
 }
@@ -92,7 +89,6 @@ header .header-container div h1 {
   letter-spacing: 10px;
   font-weight: 700;
   margin-top: -28px;
-  font-family: poppins;
 }
 header .header-container div img {
   height: 27px;
@@ -102,4 +98,127 @@ header .header-container div h6 {
   font-size: 0.75rem;
   letter-spacing: 6px;
   font-weight: 100;
+}
+
+main .presentaion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  background: #e9e6e6;
+}
+main .presentaion .pres-container {
+  margin: 15px;
+  padding: 30px 15px;
+  border: 1px dashed rgba(126, 51, 3, 0.8705882353);
+}
+main .presentaion .pres-container h2 {
+  color: rgb(166, 114, 69);
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .presentaion .pres-container h3 {
+  margin-top: 12px;
+}
+main .presentaion .pres-container img {
+  margin: 26px;
+}
+main .presentaion .pres-container img:nth-of-type(1) {
+  height: 70px;
+  border-radius: 150px;
+  margin-bottom: 8px;
+}
+main .presentaion .pres-container h4 {
+  font-weight: 100;
+}
+main .presentaion .pres-container h5 {
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+}
+main .presentaion .img-container {
+  background: url(../img/store-01.jpg) center/cover;
+  height: 100%;
+}
+main .menu-list-container {
+  color: #eee;
+  padding-bottom: 100px;
+  position: relative;
+}
+main .menu-list-container:after {
+  content: "";
+  position: absolute;
+  height: 620px;
+  width: 100%;
+  left: 50%;
+  background: url(../img/bg-menu-01.jpg) center/cover;
+  bottom: -330px;
+  transform: translate(-50%, -50%);
+}
+main .menu-list-container h2 {
+  padding: 60px 0 30px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(166, 114, 69);
+}
+main .menu-list-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto;
+  min-width: 500px;
+  text-transform: capitalize;
+}
+main .menu-list-container ul li {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding-bottom: 8px;
+}
+main .menu-list-container .menu_box-container {
+  background: #eee;
+  color: rgba(31, 30, 30, 0.89);
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 4px solid rgb(166, 114, 69);
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  z-index: 1000;
+  position: relative;
+}
+main .menu-list-container .menu_box-container .box-container {
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  padding: 30px 0;
+  margin: 0 20px;
+}
+main .menu-list-container .menu_box-container .box-container img {
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  align-self: center;
+}
+main .menu-list-container .menu_box-container .box-container .menu-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+  height: 100%;
+}
+main .menu-list-container .menu_box-container .box-container .menu-container h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgba(31, 30, 30, 0.89);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+main .menu-list-container .menu_box-container .box-container > p {
+  color: rgb(166, 114, 69);
+  font-weight: 600;
+  display: grid;
+  align-items: center;
+  font-size: 1.1rem;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */
