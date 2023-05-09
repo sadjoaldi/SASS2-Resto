@@ -148,41 +148,57 @@
       </section>
       <!-- **section reservation*** -->
       <section class="reservation">
-        <div class="open-container">
-          <h4>time <br />open</h4>
-          <img src="./assets/img/ic-plate.png" alt="plate" />
-          <h6>monday-friday</h6>
-          <p>
-            <span>monday-friday</span><br />
-            7AM-11AM (Breafast) <br />11AM-10PM (Lunch/Dinner)
-          </p>
-
-          <h6>saturday/sunday</h6>
-          <p>
-            "8AM-1PM(Brunch) <br />
-            1PM-9PM (Lunch/Dinner)
-          </p>
-          <h6>+15 890 979 25 52</h6>
-        </div>
-        <div class="reserv-container">
-          <h4>Reservation <br />online booking</h4>
-          <img src="./assets/img/ic-plate.png" alt="plate" />
-          <div class="form_reservation-container">
-            <select id="people_number" name="people_number">
-              <option value="1">people</option>
-              <option value="2">people</option>
-              <option value="3">people</option>
-              <option value="4">people</option>
-              <option value="5">people</option>
-            </select>
-            <input type="date" name="date" id="" />
-            <input type="time" name="time" id="" />
-            <input type="text" value="Name" id="name" />
-            <input type="tel" value="Phone" id="Phone" />
-            <input type="email" value="Email" id="Email" />
-            <div class="submit">
-              <input type="submit" value="book now" />
+        <div class="reservation-form-container">
+          <div class="open-container">
+            <div class="hours-container">
+              <h3>TIME</h3>
+              <h4>OPEN</h4>
+              <img src="./assets/img/ic-plate.png" alt="plate" />
+              <h5>monday-friday</h5>
+              <p>7AM-11AM (Breafast)</p>
+              <p>11AM-10PM (Lunch/Dinner)</p>
+              <h5>saturday/sunday</h5>
+              <p>"8AM-1PM(Brunch)</p>
+              <p>1PM-9PM (Lunch/Dinner)</p>
+              <h5>+15 890 979 25 52</h5>
             </div>
+          </div>
+          <div class="form-info-container">
+            <h2>RESERVATION</h2>
+            <h3>ONLINE BOOKING</h3>
+            <img src="./assets/img/ic-plate.png" alt="plate" />
+            <div class="form_reservation-container">
+              <select id="people" name="people">
+                <option value="">People</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+              <input
+                type="date"
+                name="booking-date"
+                id="booking-date"
+                value="2020-07-15"
+                min="2020-07-15"
+                max="2021-12-31"
+              />
+              <input
+                type="time"
+                name="booking-time"
+                id="booking-time"
+                min="07:00"
+                max="21:00"
+              />
+              <input type="text" placeholder="Name" />
+              <input type="tel" placeholder="Phone" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <button>BOOK NOW</button>
           </div>
         </div>
       </section>

@@ -221,4 +221,91 @@ main .menu-list-container .menu_box-container .box-container > p {
   align-items: center;
   font-size: 1.1rem;
   height: 100%;
+}
+main .reservation {
+  padding: 100px 15px 65px;
+  color: white;
+}
+main .reservation .reservation-form-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: white;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+main .reservation .reservation-form-container .open-container {
+  padding: 24px;
+  background: black;
+}
+main .reservation .reservation-form-container .open-container .hours-container {
+  border: 1px dashed grey;
+  padding: 20px 0;
+}
+main .reservation .reservation-form-container .open-container .hours-container h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+main .reservation .reservation-form-container .open-container .hours-container h4 {
+  margin-top: -10px;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+main .reservation .reservation-form-container .open-container .hours-container img {
+  margin-top: 25px;
+}
+main .reservation .reservation-form-container .open-container .hours-container h5 {
+  text-transform: uppercase;
+  color: rgb(166, 114, 69);
+  font-size: 1.1rem;
+  margin: 38px 0 12px;
+}
+main .reservation .reservation-form-container .open-container .hours-container p {
+  font-style: 0.85rem;
+}
+main .reservation .reservation-form-container .form-info-container {
+  padding: 30px 0;
+}
+main .reservation .reservation-form-container .form-info-container h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+}
+main .reservation .reservation-form-container .form-info-container h3 {
+  color: black;
+  margin-top: -18px;
+  font-size: 1.8rem;
+}
+main .reservation .reservation-form-container .form-info-container img {
+  height: 25px;
+  margin: 25px;
+}
+main .reservation .reservation-form-container .form-info-container .form_reservation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  max-width: 1000px;
+}
+main .reservation .reservation-form-container .form-info-container .form_reservation-container > * {
+  padding: 10px 0;
+  margin: 10px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+main .reservation .reservation-form-container .form-info-container button {
+  border: none;
+  border-radius: 50px;
+  background: black;
+  color: white;
+  padding: 16px 34px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .reservation .reservation-form-container .form-info-container button:hover {
+  transform: translateX(3px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
 }/*# sourceMappingURL=index.css.map */
