@@ -21,7 +21,7 @@
         <div class="logo">
           <h3>Resto</h3>
         </div>
-        <ul>
+        <ul class="nav-elements">
           <li>home</li>
           <li>reservations</li>
           <li>menu</li>
@@ -30,13 +30,10 @@
           <li>shop</li>
           <li>contact</li>
         </ul>
-
         <div class="media-container">
-          <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-          </ul>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
         </div>
       </nav>
       <div class="header-container">
@@ -204,15 +201,17 @@
       </section>
       <!-- ****section event***** -->
       <section class="event">
-        <h2>Upcoming</h2>
-        <h4>OUR EVENT</h4>
-        <img src="./assets/img/ic-plate.png" alt="plate" />
-        <div class="event-grid-container">
-          <div class="event-1_left-container">
-            <div class="dates">
-              <div class="date-content">
-                <h6>08</h6>
-                <span>July</span>
+        <div class="event-container">
+          <h2>Upcoming</h2>
+          <h4>OUR EVENT</h4>
+          <img src="./assets/img/ic-plate.png" alt="plate" />
+          <div class="event-grid-container">
+            <div class="event-1_left-container event-left">
+              <div class="dates">
+                <div class="date-content">
+                  <h6>08</h6>
+                  <span>July</span>
+                </div>
               </div>
               <div class="address">
                 <h3>Night inspirescu party</h3>
@@ -223,7 +222,7 @@
                 <h5>BUY TICKETS</h5>
               </div>
             </div>
-            <div class="event-2_left-container">
+            <div class="event-2_left-container event-left">
               <div class="dates">
                 <div class="date-content">
                   <h6>08</h6>
@@ -239,65 +238,67 @@
                 <h5>BUY TICKETS</h5>
               </div>
             </div>
-          </div>
-          <div class="event-3_right-container">
-            <div class="dates">
-              <div class="date-content">
-                <h6>08</h6>
-                <span>July</span>
+            <div class="event-3_right-container">
+              <div class="address">
+                <div class="dates">
+                  <div class="date-content">
+                    <h6>08</h6>
+                    <span>July</span>
+                  </div>
+                </div>
+
+                <h3>Thousands celebrities at Johnnie Night</h3>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i>Restaurant Resto
+                  <i class="far fa-clock"></i> 10:00pm-6:00am
+                </p>
+                <h5>BUY TICKETS</h5>
               </div>
             </div>
-            <div class="address">
-              <h3>Thousands celebrities at Johnnie Night</h3>
-              <p>
-                <i class="fas fa-map-marker-alt"></i>Restaurant Resto
-                <i class="far fa-clock"></i> 10:00pm-6:00am
-              </p>
-              <h5>BUY TICKETS</h5>
-            </div>
           </div>
-        </div>
         </div>
       </section>
       <!-- ***section CEO** -->
       <section class="ceo-container">
-        <img src="./assets/img/avatar-02.jpg" alt="CEO" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vitae
-          ex cum. Voluptates tenetur nostrum ipsum explicabo, esse blanditiis
-          sit, fugiat laudantium soluta odit, quidem obcaecati cumque cum
-          reiciendis suscipit quos dolor deleniti perferendis distinctio? Ipsum
-          animi esse labore fugit dolorem adipisci saepe qui quis veniam impedit
-          error iusto vitae amet et, magni ullam beatae non enim accusantium
-          quibusdam laborum?
-        </p>
-        <h4>russell stephens</h4>
-        <h6>CEO-HeadPassion</h6>
+        <!-- <img src="./assets/img/avatar-02.jpg" alt="CEO" /> -->
+        <div class="quote-container">
+          <div class="text-container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            minus incidunt fugiat? Ratione, ut facilis voluptate dolorum rem
+            fuga impedit. Consequatur maiores architecto ratione illo sint id
+            mollitia quaerat alias?
+          </div>
+          <h2>Russell Stephens</h2>
+          <p>CEO - HeadPassion</p>
+        </div>
       </section>
     </main>
     <!-- ****pied de page**** -->
     <footer>
       <div class="resto-container">
-        <h4>Resto</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-          fugit quia consequuntur porro molestias ad? Non, voluptatum veritatis
-          quisquam voluptas earum inventore dolore suscipit ipsum nesciunt!
-          Aliquid aut vitae obcaecati?
-        </p>
-      </div>
-      <div class="form-container">
-        <h5>Newsletter</h5>
-        <input type="email" value="Your email address" id="" />
-
-        <div class="media-conatiner">
-          <ul class="scl-container">
-            follow us:
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-regular fa-hashtag"></i></li>
-          </ul>
+        <div class="left-part">
+          <h2>Resto</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            fugit quia consequuntur porro molestias ad? Non, voluptatum
+            veritatis quisquam voluptas earum inventore dolore suscipit ipsum
+            nesciunt! Aliquid aut vitae obcaecati?
+          </p>
+        </div>
+        <div class="right-part">
+          <div class="form-container">
+            <h3>NEWSLETTER</h3>
+            <input type="email" placeholder="Your email address" />
+          </div>
+          <div class="media-conatiner">
+            <h3>FOLLOW US :</h3>
+            <ul>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-regular fa-hashtag"></i></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

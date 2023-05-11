@@ -1,9 +1,14 @@
 main {
+  // **debut section1***
   .presentaion {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     background: #e9e6e6;
+
+    @media screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
 
     .pres-container {
       margin: 15px;
@@ -41,8 +46,15 @@ main {
     .img-container {
       background: url(../img/store-01.jpg) center/cover;
       height: 100%;
+
+      @media screen and (max-width: 680px) {
+        display: none;
+      }
     }
   }
+  // ****fin section 1*****
+
+  // ****debut section 2******
   .menu-list-container {
     color: #eee;
     padding-bottom: 100px;
@@ -75,6 +87,12 @@ main {
       min-width: 500px;
       text-transform: capitalize;
 
+      @media screen and (max-width: 680px) {
+        min-width: 200px;
+        width: 90%;
+        font-size: 0.65rem;
+      }
+
       li {
         border-bottom: 1px solid rgb(182, 182, 182);
         padding-bottom: 8px;
@@ -92,6 +110,10 @@ main {
       grid-template-columns: 50% 50%;
       z-index: 1000;
       position: relative;
+
+      @media screen and (max-width: 680px) {
+        grid-template-columns: 1fr;
+      }
 
       .box-container {
         display: grid;
@@ -133,6 +155,9 @@ main {
       }
     }
   }
+  // ***fin section2**
+
+  // ***debut section3****
   .reservation {
     padding: 100px 15px 65px;
     color: white;
@@ -143,6 +168,10 @@ main {
       background: white;
       max-width: 1050px;
       margin: 0 auto;
+
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
+      }
 
       .open-container {
         padding: 24px;
@@ -206,6 +235,10 @@ main {
           margin-bottom: 30px;
           max-width: 1000px;
 
+          @media screen and (max-width: 680px) {
+            grid-template-columns: 1fr;
+          }
+
           > * {
             padding: 10px 0;
             margin: 10px;
@@ -234,4 +267,207 @@ main {
       }
     }
   }
+  // ****fin section 3********
+
+  // *******debut section 4*******
+  .event {
+    padding: 50px 20px 90px;
+
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
+
+    .event-container {
+      max-width: 1000px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 2.5rem;
+        color: rgb(166, 114, 69);
+        // font-family: $font1;
+        font-weight: 100;
+      }
+
+      h4 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        font-weight: 900;
+        color: white;
+        margin-top: -12px;
+        // font-family: $font2;
+      }
+      img {
+        margin: 30px 0;
+      }
+      .event-grid-container {
+        display: grid;
+        grid-template-columns: 58% 42%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "a b"
+          "c b";
+
+        gap: 20px;
+
+        .date-content {
+          background: rgba(31, 30, 30, 0.89);
+          height: 86px;
+          width: 86px;
+          margin: 0 auto;
+          color: white;
+          // @include childCenter;
+          flex-direction: column;
+          :line-height: 22px;
+
+          h6 {
+            font-size: 1.6rem;
+          }
+        }
+
+        .address {
+          background: white;
+
+          h3 {
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-left: 8px;
+          }
+
+          p {
+            font-size: 0.9rem;
+            color: grey;
+            margin-top: 20px;
+            letter-spacing: 1px;
+          }
+          i {
+            margin-right: 3px;
+            font-size: 0.7rem;
+            transform: translateY(-2px);
+
+            &:nth-child(2) {
+              margin-left: 10px;
+            }
+          }
+          h5 {
+            letter-spacing: 2px;
+            margin-top: 25px;
+          }
+        }
+
+        .event-left {
+          display: grid;
+          grid-template-columns: 39% 61%;
+          text-align: left;
+
+          .dates {
+            // @include childCenter;
+            text-align: center;
+          }
+
+          .address {
+            color: black;
+            padding: 30px 20px;
+          }
+        }
+
+        .event-1_left-container {
+          grid-area: a;
+
+          .dates {
+            background: url(../img/event-01.jpg) center/cover;
+          }
+        }
+
+        .event-2_left-container {
+          grid-area: c;
+
+          .dates {
+            background: url(../img/event-02.jpg) center/cover;
+          }
+        }
+
+        .event-3_right-container {
+          grid-area: b;
+          background: url(../img/event-03.jpg) center/cover;
+          padding: 25px;
+
+          .address {
+            height: 100%;
+            padding: 0 12px;
+            h3 {
+              margin: 40px 0 15px;
+            }
+            h5 {
+              padding: 45px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  // *****fin section4*********
+
+  // *****debut section5*************
+  .ceo-container {
+    padding: 70px 0 230px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 350px;
+      width: 100%;
+      position: absolute;
+      background: url(../img/gmap.jpg) center/cover;
+      left: 0;
+      bottom: 0;
+    }
+
+    .quote-container {
+      background: white;
+      z-index: 4;
+      position: relative;
+      max-width: 1000px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 65px 70px;
+      box-shadow: 0 0 3px #333;
+
+      &:before {
+        content: "";
+        position: absolute;
+        background: url(../img/avatar-02.jpg) center/cover;
+        height: 60px;
+        width: 60px;
+        top: -30px;
+        border-radius: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .text-container {
+        line-height: 30px;
+
+        &::before {
+          content: "❝";
+        }
+        &::after {
+          content: "❞";
+        }
+        &:before,
+        &::after {
+          font-size: 1.5rem;
+        }
+      }
+      h2 {
+        margin: 30px 0 15px;
+        // font-family: $font3;
+        font-weight: 100;
+      }
+      p {
+        color: rgb(166, 114, 69);
+      }
+    }
+  }
+  // ****fin section5****
 }
